@@ -1,64 +1,54 @@
-# 🎯 Hangman Game with ASCII Art
+# Hangman Game 🎯
 
-A simple **Hangman** game implemented in Python, featuring **ASCII art** for a fun visual experience. Guess the letters of a hidden word before the hangman is complete!
+A classic **Hangman game** built with Python's `tkinter` library. Test your word-guessing skills and have fun while improving your vocabulary!
 
 ## Features
 
-* 🎨 **ASCII Art** to display hangman stages.
-* 📝 Random word selection from a predefined list.
-* ✅ Tracks guessed letters and prevents duplicate guesses.
-* ⚠️ Input validation to ensure only single letters are accepted.
-* 🎉 Win/Lose messages with the full word revealed.
+* 🎮 **Interactive GUI**: Easy-to-use interface with buttons and keyboard input.
+* ⚡ **Difficulty Levels**: Choose between `Easy`, `Medium`, or `Hard` for different numbers of attempts.
+* 🖌 **Hangman Drawing**: Animated hangman figure that updates with wrong guesses.
+* 🏆 **Score Tracking**: Keeps track of wins and losses.
+* 💡 **Keyboard Support**: Guess letters using your keyboard or the on-screen buttons.
+
+
+## Installation
+
+1. Make sure you have **Python 3.x** installed on your system.
+2. Clone or download this repository.
+3. Run the game with:
+
+```bash
+python hangman_game.py
+```
+
+*(Replace `hangman_game.py` with your filename if different)*
 
 ## How to Play
 
-1. Clone this repository or download the `hangman.py` file.
+1. Select a difficulty level:
 
-2. Run the game using Python 3:
+   * **Easy**: 10 attempts
+   * **Medium**: 7 attempts
+   * **Hard**: 5 attempts
+2. Start the game and try to guess the hidden word by clicking letters or typing on your keyboard.
+3. Each incorrect guess will bring the hangman closer to completion.
+4. Win by guessing all letters correctly before running out of attempts.
+5. Your wins and losses are tracked in real-time.
 
-   ```bash
-   python hangman.py
-   ```
 
-3. Enter a **single letter** at a time to guess the word.
+## Dependencies
 
-4. Try to guess the word before the hangman is fully drawn.
+* Python 3.x
+* `tkinter` (usually included with Python)
 
-5. Win by guessing all letters correctly. Lose if you run out of attempts.
+## Future Improvements
 
-## Example
-
-```
-🎯 Welcome to Hangman with ASCII Art!
-Guess the word: _ _ _ _ _ _
-
-       ------
-       |    |
-       |    
-       |    
-       |    
-       |
-    =========
-
-Enter a letter: a
-❌ 'a' is not in the word. Attempts left: 5
-_ _ _ _ _ _
-
-...
-```
-
-## Customization
-
-* Add more words to the `words` list for variety.
-* Modify the `stages` list to change the ASCII art.
-
-## Contributing
-
-Feel free to submit **issues**, **feature requests**, or **pull requests** to improve the game!
+* Add **themes** (dark/light mode).
+* Expand **word list** or load from an external file.
+* Add **multiplayer mode**.
+* Include **hints** for words.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under MIT license.
 
-
-If you want, I can also create a **more attractive version with badges, images, and a table of contents** for your GitHub README so it looks more professional. Do you want me to do that?
